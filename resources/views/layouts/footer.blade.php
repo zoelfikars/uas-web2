@@ -1,6 +1,6 @@
 <footer
     class="bg-white shadow mx-auto py-6 px-4 sm:px-6 lg:px-8 dark:bg-gray-800 {{ Auth::user()->role == 'admin' ? 'sm:ml-64' : '' }}">
-    <div class="w-full mx-auto w-full p-4 md:flex md:items-center md:justify-between">
+    <div class="w-full mx-auto w-full p-4 md:flex md:items-center md:justify-between {{ Auth::user()->role == 'admin' ? '' : 'max-w-7xl' }}">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {{ date('Y') }} <a
                 href="https://flowbite.com/" class="hover:underline">Muhamad Zulfikar Fikri</a>. All Rights Reserved.
         </span>

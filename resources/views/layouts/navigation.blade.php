@@ -15,7 +15,7 @@
                         </svg>
                     </button>
                     <a href="{{ route('dashboard') }}" class="flex items-center space-x-3 rtl:space-x-reverse md:me-24">
-                        <img src="{{ asset('image/logo-dark.png') }}" class="h-8" alt="">
+                        <img src="{{ asset('image/logo-light.png') }}" class="h-8" alt="">
                         <h1 class="font-bold text-dark dark:text-white">
                             CourseKu
                         </h1>
@@ -108,7 +108,7 @@
                         <button type="button"
                             class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                             aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
-                            <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 {{ request()->routeIs('transaksi.*') ? 'text-white dark:text-blue-800' : 'group-hover:text-gray-900 dark:group-hover:text-white' }}"
+                            <svg class="flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 {{ request()->routeIs('transaksi.*') ? 'text-gray-900 dark:text-white' : 'group-hover:text-gray-900 dark:group-hover:text-white' }}"
                                 aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                 fill="currentColor" viewBox="0 0 24 24">
                                 <path fill-rule="evenodd"
@@ -181,7 +181,7 @@
     <nav class="bg-white shadow border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="{{ route('dashboard') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="{{ asset('image/logo-dark.png') }}" class="h-8" alt="">
+                <img src="{{ asset('image/logo-light.png') }}" class="h-8" alt="">
                 <h1 class="font-bold text-dark dark:text-white">
                     CourseKu
                 </h1>
